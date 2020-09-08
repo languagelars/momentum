@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Momentum</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="page-container">
+			<nav class="top-nav">
+				<ul class="nav-list">
+					<li><a class="nav-link" href="#">About</a></li>
+					<li><a class="nav-link" href="#">Beta Testing</a></li>
+				</ul>
+			</nav>
+			<div class="header-content">
+				<h1 class="primary-heading">Momentum</h1>
+				<p class="lead">All your photography at a glance</p>
+			</div>
+		</div>
+	</header> 
+	<div class="page-container">
+		<main>
+			<section class="section-content">
+				<h2 class="secondary-heading">What is Momentum?</h2>
+				<p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus mollitia nemo, ducimus ab earum iure ex ea debitis repellat et perspiciatis, doloribus delectus. Distinctio quidem, rem quae ducimus eveniet, tenetur tempore reprehenderit vel natus pariatur similique iste explicabo aliquam, numquam quas nam laborum quibusdam? Quis nulla quibusdam unde corrupti eveniet?</p>
+			</section>
+			<section class="section-content">
+				<h2 class="secondary-heading">We are currently seeking beta testers!</h2>
+				<h3 class="tertiary-heading">Interested? Fill out the form below!</h3>
+				<div class="form-wrapper">
+					<form class="form">
+						<div class="form-group">
+							<label for="lname">Last name:</label>
+							<input type="text" name="lname" id="lname" required>
+						</div>
+						<div class="form-group">
+							<label for="fname">First name:</label>
+							<input type="text" id="fname" name="fname" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+						<button id="submit-btn" type="submit">Sign Up for the beta</button>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script>
+		document.querySelector('#submit-btn').addEventListener('click', function() {
+			let heading = document.querySelector('.primary-heading');
+			heading.style.color = "#6588F7";
+		})
+	</script>
+</body>
+</html>
